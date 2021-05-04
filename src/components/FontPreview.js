@@ -1,6 +1,7 @@
 import TextPreview from './TextPreview'
 
-const FontPreview = () => {
+const FontPreview = (props) => {
+  const { fontPreview, setFontPreview } = props
 
   return (
     /*<p style="font-family: Karantina; font-size: 20px;" className="sample">{TextPreview}</p>*/

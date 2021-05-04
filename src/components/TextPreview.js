@@ -1,4 +1,5 @@
-const TextPreview = () => {
+const TextPreview = (props) => {
+  const { textPreview, setTextPreview } = props
 
   return (
     <div className="mb-3">

@@ -4,7 +4,7 @@ const Select = (props) => {
     /*<div style="position: sticky; top: 0px;"> // cette ligne se trouve après la ligne 8
       </div>*/
     <div className="container">
-      <div className="row my-5">
+      <div className="d-flex row my-5">
         <div className="col-lg-3 mb-4">
 
           <label className="fw-bold mb-2" htmlFor="sort">Afficher des polices</label>

@@ -1,5 +1,5 @@
-const TextSize = () => {
-
+const TextSize = (props) => {
+  const { textSize, setTextSize } = props
 
   return (
     <>
