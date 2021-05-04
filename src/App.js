@@ -1,4 +1,4 @@
-import { useState } from 'react'
+
 import AppGFW from './components/AppGFW'
 import './App.css';
 
@@ -10,7 +10,7 @@ function App() {
     <div className="App">
       <header className="p-5 bg-danger text-white text-center">
         <h1 className="display-1">Quoi de neuf, Google Fonts ?</h1>
-        <p className="h4">Le plus récents, les plus trendy et les plus populaires polices Google.</p>
+        <p className="h4">Le plus récents, les plus <i>trendy</i> et les plus populaires polices Google.</p>
       </header>
       <AppGFW />
 

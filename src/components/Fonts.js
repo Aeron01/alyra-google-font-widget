@@ -1,7 +1,7 @@
 import { useEffect, useState } from 'react'
 import Font from './Font'
 
-const AppGFW = () => {
+const Fonts = () => {
   const [fonts, setFonts] = useState([]);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
@@ -89,4 +89,4 @@ const AppGFW = () => {
 }
 
 
-export default AppGFW
+export default Fonts
