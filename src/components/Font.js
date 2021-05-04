@@ -8,8 +8,6 @@ const Font = ({ font }) => {
           <span>{(family)}</span>
           <small>{variants.length} variant(s)</small>
         </h2>
-
-
         <p className="mb-0">
           <span className="badge bg-dark text-uppercase">{category}</span>
         </p>
