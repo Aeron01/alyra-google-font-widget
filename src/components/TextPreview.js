@@ -1,10 +1,13 @@
 const TextPreview = (props) => {
   const { textPreview, setTextPreview } = props
 
+  const handleOnChange = (event) => { setTextPreview(event.target.value) };
+  console.log(textPreview)
+
   return (
     <div className="mb-3">
       <label htmlFor="text" className="form-label fw-bold mb-3">Tapez votre texte</label>
-      <textarea id="text" className="form-control">Portez ce vieux whisky au juge blond qui fume !? 0123456789</textarea>
+      <textarea onChange={handleOnChange} id="text" className="form-control" value={textPreview} />
     </div>
   );
 }
