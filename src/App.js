@@ -1,5 +1,4 @@
 import AppGFW from './components/AppGFW'
-import './App.css';
 
 function App() {
 
