@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Font from './Font'
 
 const Fonts = (props) => {
-  const { select, url, setUrl } = props
+  const { select, url, setUrl, textPreview, setTextPreview, textSize } = props
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [fonts, setFonts] = useState([]);
@@ -11,8 +11,6 @@ const Fonts = (props) => {
     let isCancelled = false
     const controller = new AbortController()
     setLoading(true);
-    /*const apiKey = process.env.REACT_APP_API_key
-    console.log(apiKey);*/
     switch (select) {
       case 'Les plus récentes':
         setUrl(`https://www.googleapis.com/webfonts/v1/webfonts?key=${process.env.REACT_APP_GFW_API_KEY}&sort=date`)
@@ -67,10 +65,6 @@ const Fonts = (props) => {
     // eslint-disable-next-line
   }, [select, url]);
 
-
-
-
-
   return (
     <div className="col-lg-9">
       <section className="d-flex row mb-5">
@@ -78,7 +72,7 @@ const Fonts = (props) => {
           <span className="badge bg-danger">{select}</span>
         </h2>
         {fonts.map((font) => {
-          return <Font key={font.family} font={font} />
+          return <Font textSize={textSize} textPreview={textPreview} setTextPreview={setTextPreview} key={font.family} font={font} />
         })}
         {loading && <p className="text-center">loading...</p>}
         {error && <p className="alert alert-danger">{error}</p>}

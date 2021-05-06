@@ -1,9 +1,5 @@
-import TextPreview from './TextPreview'
-import TextSize from './AppGFW'
-
 const FontPreview = (props) => {
-  const { textPreview, textSize, setTextSize } = props
-
+  const { textPreview, textSize, font } = props
 
   return (
     <div>
@@ -11,9 +7,9 @@ const FontPreview = (props) => {
         style={{
           fontSize: `${textSize}px`,
           fontWeight: 'bold',
-          fontFamily: 'Karantina',
+          fontFamily: `${font.family}`,
         }}
-      >Il vaut mieux vivre pour l'Empreur que vivre pour soit même.</p>
+      >{textPreview}</p>
     </div>
   );
 }
