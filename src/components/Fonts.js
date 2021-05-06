@@ -27,7 +27,7 @@ const Fonts = (props) => {
     fetch(url)
 
       .then((response) => {
-        console.log("don't forget me here!!!");
+
         return new Promise((resolved) => {
           setTimeout(() => resolved(response), 100);
         });
@@ -41,9 +41,9 @@ const Fonts = (props) => {
         return response.json();
       })
       .then((data) => {
-        console.log("I get data")
+
         if (!isCancelled) {
-          console.log("I will update component")
+
           setFonts(() => [])
           for (let index = 0; index < 10; index++) {
             setFonts((f) => [...f, data.items[index]])

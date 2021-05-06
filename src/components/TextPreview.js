@@ -2,7 +2,7 @@ const TextPreview = (props) => {
   const { textPreview, setTextPreview } = props
 
   const handleOnChange = (event) => { setTextPreview(event.target.value) };
-  console.log(textPreview)
+
 
   return (
     <div className="mb-3">
