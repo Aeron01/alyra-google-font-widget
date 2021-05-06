@@ -6,10 +6,10 @@ const FontPreview = (props) => {
       <p
         style={{
           fontSize: `${textSize}px`,
-
           fontFamily: `${font.family}`,
         }}
       >{textPreview}</p>
+      <FontPreview font={font} textSize={textSize} textPreview={textPreview} />
     </div>
   );
 }

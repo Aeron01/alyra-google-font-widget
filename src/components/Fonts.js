@@ -66,7 +66,7 @@ const Fonts = (props) => {
   }, [select, url]);
 
   return (
-    <div className="col-lg-9">
+    <div>
       <section className="d-flex row mb-5">
         <h2 className="my-3">
           <span className="badge bg-danger">{select}</span>
