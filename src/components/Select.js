@@ -1,5 +1,5 @@
 const Select = (props) => {
-  const { select, setSelect } = props
+  const { setSelect } = props
   return (
     <div className="mt-3">
       <label className="fw-bold mb-2 mt-2" htmlFor="sort">Afficher des polices</label>
