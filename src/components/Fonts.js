@@ -2,7 +2,7 @@ import { useEffect, useState } from 'react'
 import Font from './Font'
 
 const Fonts = (props) => {
-  const { select, url, setUrl, textPreview, setTextPreview, textSize } = props
+  const { select, url, setUrl, textPreview, textSize } = props
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState("");
   const [fonts, setFonts] = useState([]);
@@ -72,7 +72,7 @@ const Fonts = (props) => {
           <span className="badge bg-danger">{select}</span>
         </h2>
         {fonts.map((font) => {
-          return <Font textSize={textSize} textPreview={textPreview} setTextPreview={setTextPreview} key={font.family} font={font} />
+          return <Font textSize={textSize} textPreview={textPreview} key={font.family} font={font} />
         })}
         {loading && <p className="text-center">loading...</p>}
         {error && <p className="alert alert-danger">{error}</p>}
