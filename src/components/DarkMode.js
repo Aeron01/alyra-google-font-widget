@@ -20,7 +20,7 @@ const DarkMode = ({ children }) => {
     <section>
       <div className="form-check form-switch">
         <input checked={darkModes} className="form-check-input" type="checkbox" id="activate" onChange={handleChange} />
-        <label className="form-check-label" htmlFor="activate"> Mode Sombre </label>
+        <label className="text-white form-check-label" htmlFor="activate"> Mode Sombre </label>
       </div>
       {children}
     </section>
