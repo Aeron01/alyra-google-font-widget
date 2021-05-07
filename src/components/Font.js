@@ -18,7 +18,7 @@ const Font = (props) => {
             <small>{font.variants.length} variant(s)</small>
           </h2>
           <p className="mb-0">
-            <span className="badge bg-dark text-uppercase">{font.category}</span>
+            <span className="badge border border-light bg-dark text-uppercase">{font.category}</span>
           </p>
           <p style={{ fontFamily: `${font.family}`, fontSize: `${textSize}px` }}>{textPreview}</p>
 
